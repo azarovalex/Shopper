@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		DF22CAF1200FB68500523444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF22CAF0200FB68500523444 /* AppDelegate.swift */; };
-		DF22CAF3200FB68500523444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF22CAF2200FB68500523444 /* ViewController.swift */; };
+		DF22CAF3200FB68500523444 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF22CAF2200FB68500523444 /* MainVC.swift */; };
 		DF22CAF6200FB68500523444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF22CAF4200FB68500523444 /* Main.storyboard */; };
 		DF22CAF8200FB68500523444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF22CAF7200FB68500523444 /* Assets.xcassets */; };
 		DF22CAFB200FB68500523444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF22CAF9200FB68500523444 /* LaunchScreen.storyboard */; };
+		DF22CB05200FB92800523444 /* PrettyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF22CB04200FB92800523444 /* PrettyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF22CAED200FB68500523444 /* Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF22CAF0200FB68500523444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF22CAF2200FB68500523444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF22CAF2200FB68500523444 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		DF22CAF5200FB68500523444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF22CAF7200FB68500523444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF22CAFA200FB68500523444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF22CAFC200FB68500523444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF22CB04200FB92800523444 /* PrettyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		DF22CAEF200FB68500523444 /* Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				DF22CB03200FB90000523444 /* View */,
+				DF22CB02200FB69000523444 /* Controller */,
 				DF22CAF0200FB68500523444 /* AppDelegate.swift */,
-				DF22CAF2200FB68500523444 /* ViewController.swift */,
 				DF22CAF4200FB68500523444 /* Main.storyboard */,
 				DF22CAF7200FB68500523444 /* Assets.xcassets */,
 				DF22CAF9200FB68500523444 /* LaunchScreen.storyboard */,
 				DF22CAFC200FB68500523444 /* Info.plist */,
 			);
 			path = Shopper;
+			sourceTree = "<group>";
+		};
+		DF22CB02200FB69000523444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF22CAF2200FB68500523444 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF22CB03200FB90000523444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF22CB04200FB92800523444 /* PrettyTxtField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF22CAF3200FB68500523444 /* ViewController.swift in Sources */,
+				DF22CAF3200FB68500523444 /* MainVC.swift in Sources */,
+				DF22CB05200FB92800523444 /* PrettyTxtField.swift in Sources */,
 				DF22CAF1200FB68500523444 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
